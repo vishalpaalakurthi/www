@@ -16,8 +16,8 @@ export default () => {
                 <h3></h3>
                 <NavWrapper>
                     <Link to="/" label="Home" />
-                    <Link to="/Blogs" label="Blogs" />
-                    <Link to="#projects" label="Projects" />
+                    <Link to="/blog" label="articles" />
+                    <Link to="/#projects" label="Projects" />
                     <Link to="/Contact" label="Contact" />
                 </NavWrapper>
             </nav>

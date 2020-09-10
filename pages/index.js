@@ -18,7 +18,7 @@ export default () => {
             <BlogWrapper>
                 <div className="secHeader">
                     <h3>Recent Published</h3>
-                    <NavLink href="">
+                    <NavLink href="/blog">
                         <a>
                             <p>View all</p>
                         </a>
@@ -99,16 +99,15 @@ const Header = styled.div`
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-top: 120px;  
+
 `;
 const ProfileWrapper = styled.header`
     display: flex;
     height: auto;
     width: 100%;
-    margin-top: -120px;
     border-radius: 15px;
     padding: 0px 10px; 
-    box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 2px 2px rgba(0,0,0,.05), -8px -2px 12px rgba(0,0,0,.05), 8px 8px 8px rgba(0,0,0,.05); 
+    margin: 40px;  
 `;
 
 const BlogWrapper = styled.section`
@@ -116,6 +115,7 @@ const BlogWrapper = styled.section`
     height: auto;
     border-radius: 15px;
     flex-direction: column;
+    margin: 40px;  
 `;
 
 const ProjectWrapper = styled.section`
@@ -123,6 +123,7 @@ const ProjectWrapper = styled.section`
     height: auto;
     border-radius: 5px;
     flex-direction: column;
+    margin: 40px;  
 `;
 
 const Overview = styled.div`

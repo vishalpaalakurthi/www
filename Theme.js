@@ -60,9 +60,9 @@ export const ThemeWrapper = ({ children }) => {
             <ThemeContext.Provider value={{ themed, setThemed }}>
                 <ThemeProvider theme={themed}>
                     <GlobalStyles />
-                    <Nav />
                     <Wrapper>
-                        <Home />
+                        <Nav />
+                        {children}
                     </Wrapper>
                 </ThemeProvider>
             </ThemeContext.Provider>
@@ -70,4 +70,8 @@ export const ThemeWrapper = ({ children }) => {
     )
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+`;
