@@ -27,22 +27,26 @@ export default () => {
                 <div className="secBody">
                     <Overview>
                         <div className="overviewBody">
-                            <h4 style={{opacity:'0.8', fontWeight: '500'}}>How to create a simple cassandra workbench</h4>
-                            <h5 style={{opacity:'0.8', fontWeight: '400'}}>
-                                    {'“Too lazy to do it”, Quote turned me to create a simple and easy cassandra workbench.'}
-                            
+                            <h4 style={{ opacity: '0.8', fontWeight: '500' }}>How to create a simple cassandra workbench</h4>
+                            <h5 style={{ opacity: '0.8', fontWeight: '400' }}>
+                                {'“Too lazy to do it”, Quote turned me to create a simple and easy cassandra workbench.'}
+
                             </h5>
-                            <div style={{textAlign: 'left'}}><Icon icon={arrowRight} /></div>
+                            <div style={{ textAlign: 'left' }}>
+                                <a> <Icon icon={arrowRight} /></a>
+                            </div>
                         </div>
                     </Overview>
                     <Overview>
                         <div className="overviewBody">
-                            <h4 style={{opacity:'0.8', fontWeight: '500'}}>How to create a simple cassandra workbench</h4>
-                            <h5 style={{opacity:'0.8', fontWeight: '400'}}>
-                                    {'“Too lazy to do it”, Quote turned me to create a simple and easy cassandra workbench.'}
-                            
+                            <h4 style={{ opacity: '0.8', fontWeight: '500' }}>How to create a simple cassandra workbench</h4>
+                            <h5 style={{ opacity: '0.8', fontWeight: '400' }}>
+                                {'“Too lazy to do it”, Quote turned me to create a simple and easy cassandra workbench.'}
+
                             </h5>
-                            <div style={{textAlign: 'left'}}><Icon icon={arrowRight} /></div>
+                            <div style={{ textAlign: 'left' }}>
+                                <a> <Icon icon={arrowRight} /></a>
+                            </div>
                         </div>
                     </Overview>
                 </div>
@@ -59,11 +63,13 @@ export default () => {
                 <div className="secBody">
                     <Overview>
                         <div className="overviewBody">
-                            <h4 style={{opacity:'0.8', fontWeight: '500'}}>Project Name</h4>
-                            <h5 style={{opacity:'0.8', fontWeight: '400'}}>
-                                    {'This product is a windows menu bar application which helps to boost the productivity'}
+                            <h4 style={{ opacity: '0.8', fontWeight: '500' }}>Project Name</h4>
+                            <h5 style={{ opacity: '0.8', fontWeight: '400' }}>
+                                {'This product is a windows menu bar application which helps to boost the productivity'}
                             </h5>
-                            <div style={{textAlign: 'left'}}><Icon icon={arrowRight} /></div>
+                            <div style={{ textAlign: 'left' }}>
+                                <a> <Icon icon={arrowRight} /> </a>
+                            </div>
                         </div>
                     </Overview>
                 </div>

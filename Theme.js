@@ -1,9 +1,10 @@
 import styled, { createGlobalStyle, ThemeProvider, ThemeContext } from 'styled-components';
+import { MDXProvider } from '@mdx-js/react';
 import Nav from './components/Nav'
 import Home from './pages/index'
 
 export const theme = {
-    'green': {
+    light: {
         bgcolor: '#FFFFFF',
         textcolor: '#000000'
     }
@@ -53,16 +54,18 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const ThemeWrapper = ({ children }) => {
-    const [themed, setThemed] = React.useState(theme.green);
+    const [themed, setThemed] = React.useState(theme.light);
 
     return (
         <>
             <ThemeContext.Provider value={{ themed, setThemed }}>
                 <ThemeProvider theme={themed}>
                     <GlobalStyles />
+                    <Nav />
                     <Wrapper>
-                        <Nav />
-                        {children}
+                        <MDXProvider>
+                            {children}
+                        </MDXProvider>
                     </Wrapper>
                 </ThemeProvider>
             </ThemeContext.Provider>
