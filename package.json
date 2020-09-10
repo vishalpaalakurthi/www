@@ -33,7 +33,51 @@
           ],
           "import-glob-array"
         ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ],
+          "import-glob-array"
+        ]
+      },
+      "test": {
+        "presets": [
+          [
+            "next/babel",
+            {
+              "preset-env": {
+                "modules": "commonjs"
+              }
+            }
+          ],
+          "import-glob-array"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ],
+          "import-glob-array"
+        ]
       }
-    }
+    },
+    "presets": [
+      "next/babel"
+    ],
+    "plugins": [
+      "import-glob-array"
+    ]
   }
 }
