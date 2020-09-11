@@ -26,6 +26,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.bgcolor};
     color: ${({ theme }) => theme.textcolor};
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
     font-family: Poppins;
     font-style: normal;
@@ -90,5 +91,4 @@ const Wrapper = styled.div`
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    overflow-x: hidden;
 `;
