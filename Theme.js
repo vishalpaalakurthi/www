@@ -14,6 +14,7 @@ export const theme = {
 export const GlobalStyles = createGlobalStyle`
   html {
       scroll-behavior: smooth;
+      line-height: 30px;
   }
 
   *,
@@ -123,9 +124,22 @@ export const GlobalStyles = createGlobalStyle`
       width: 50%;
   }
 
+  .blogWrapper {
+      margin: 40px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  article {
+      display: inline-grid;
+  }
+
   @media (max-width: 600px) {
           .overview {
             width: 100%;
+          }
+          .blogWrapper {
+            margin: 30px;
           }
     }
 
