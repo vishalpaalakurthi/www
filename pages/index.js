@@ -80,7 +80,7 @@ export default () => {
                                 {'Feel free to reach out if you are looking for a developer. if you have any request or question, don’t hesitate to contact me .'}
                             </h4>
                             <div style={{ textAlign: 'left' }}>
-                                <a href="mailto: abc@example.com"> <p style={{textDecorationLine: 'underline'}}> vishalpaalakurthi@gmail.com </p> </a>
+                                <a href="mailto: vishalpaalakurthi@gmail.com"> <p style={{textDecorationLine: 'underline'}}> vishalpaalakurthi@gmail.com </p> </a>
                             </div>
                         </div>
                     </Overview>
