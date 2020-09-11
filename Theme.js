@@ -58,11 +58,11 @@ export const ThemeWrapper = ({ children }) => {
 
     return (
         <>
-            <ThemeContext.Provider value={{ themed, setThemed }}>
+            <ThemeContext.Provider value={themed}>
                 <ThemeProvider theme={themed}>
                     <GlobalStyles />
-                    <Nav />
                     <Wrapper>
+                        <Nav />
                         <MDXProvider>
                             {children}
                         </MDXProvider>
@@ -77,4 +77,5 @@ const Wrapper = styled.div`
     max-width: 1200px;
     width: 100%;
     margin: auto;
+    overflow-x: hidden;
 `;
