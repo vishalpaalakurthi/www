@@ -72,7 +72,6 @@ export const GlobalStyles = createGlobalStyle`
   h3 {
       font-weight: 600;
       font-size: 20px;
-      text-transform: uppercase;
   }
   .sectionTitle {
       color: #00CD37;

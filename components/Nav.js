@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from '../components/Link'
+import Logo from './Logo';
 
 export default () => {
     return (
@@ -13,7 +14,7 @@ export default () => {
                 padding: '5px 5px',
                 textTransform: 'uppercase'
             }}>
-                <h3></h3>
+                <Logo />
                 <NavWrapper>
                     <Link to="/" label="Home" />
                     <Link to="/blog" label="articles" />
