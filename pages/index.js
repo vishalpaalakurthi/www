@@ -4,8 +4,10 @@ import Social from '../components/Social';
 import NavLink from 'next/link';
 import Icon from 'react-icons-kit';
 import { arrowRight } from 'react-icons-kit/feather';
+import { RecentArticles } from "../assets/metadata/Metadata";
 
 export default () => {
+    debugger;
     return (
         <>
             <ProfileWrapper>
@@ -25,30 +27,23 @@ export default () => {
                     </NavLink>
                 </div>
                 <div className="secBody">
-                    <Overview>
-                        <div className="overviewBody">
-                            <h4 style={{ opacity: '0.8', fontWeight: '500' }}>How to create a simple cassandra workbench</h4>
-                            <h5 style={{ opacity: '0.8', fontWeight: '400' }}>
-                                {'“Too lazy to do it”, Quote turned me to create a simple and easy cassandra workbench.'}
 
-                            </h5>
-                            <div style={{ textAlign: 'left' }}>
-                                <a> <Icon icon={arrowRight} /></a>
+                    {RecentArticles.length === 0 ? <></>
+                        :
+                        RecentArticles.map( (article, index) => {
+                        return (<Overview>
+                            <div className="overviewBody">
+                                <h4 style={{ opacity: '0.8', fontWeight: '500' }}>{article.title}</h4>
+                                <h5 style={{ opacity: '0.8', fontWeight: '400' }}>{article.shortNote}</h5>
+                                <div style={{ textAlign: 'left' }}>
+                                    <NavLink href={article.path}>
+                                    <a> <Icon icon={arrowRight} /></a>
+                                    </NavLink>
+                                </div>
                             </div>
-                        </div>
-                    </Overview>
-                    <Overview>
-                        <div className="overviewBody">
-                            <h4 style={{ opacity: '0.8', fontWeight: '500' }}>How to create a simple cassandra workbench</h4>
-                            <h5 style={{ opacity: '0.8', fontWeight: '400' }}>
-                                {'“Too lazy to do it”, Quote turned me to create a simple and easy cassandra workbench.'}
-
-                            </h5>
-                            <div style={{ textAlign: 'left' }}>
-                                <a> <Icon icon={arrowRight} /></a>
-                            </div>
-                        </div>
-                    </Overview>
+                        </Overview>)
+                        } )
+                    }
                 </div>
             </BlogWrapper>
             <ProjectWrapper id="projects">
