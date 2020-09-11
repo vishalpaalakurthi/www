@@ -2,6 +2,7 @@ import styled, { createGlobalStyle, ThemeProvider, ThemeContext } from 'styled-c
 import { MDXProvider } from '@mdx-js/react';
 import Nav from './components/Nav'
 import Home from './pages/index'
+import Social from './components/Social';
 
 export const theme = {
     light: {
@@ -51,6 +52,15 @@ export const GlobalStyles = createGlobalStyle`
   .sectionTitle {
       color: #00CD37;
   }
+  footer {
+          width: 100%;
+          height: 100px;
+          border-top: 1px solid #eaeaea;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
 `;
 
 export const ThemeWrapper = ({ children }) => {
@@ -66,6 +76,9 @@ export const ThemeWrapper = ({ children }) => {
                         <MDXProvider>
                             {children}
                         </MDXProvider>
+                        <footer>
+                            <Social />
+                        </footer>
                     </Wrapper>
                 </ThemeProvider>
             </ThemeContext.Provider>

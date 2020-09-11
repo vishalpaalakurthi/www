@@ -7,23 +7,23 @@ import { github, linkedin, instagram, twitter } from 'react-icons-kit/fa';
 export default () => {
     return (
         <SocialWrapper>
-            <NavLink href="">
-                <a>
+            <NavLink href="https://www.linkedin.com/in/vishal-paalakurthi-11481a8a">
+                <a target="_blank">
                     <Icon icon={linkedin} size={20} />
                 </a>
             </NavLink>
             <NavLink href="https://github.com/vishalpaalakurthi/">
-                <a>
+                <a target="_blank">
                     <Icon icon={github} size={20} />
                 </a>
             </NavLink>
-            <NavLink href="">
-                <a>
+            <NavLink href="https://twitter.com/VPaalakurthi">
+                <a target="_blank">
                     <Icon icon={twitter} size={20} />
                 </a>
             </NavLink>
-            <NavLink href="">
-                <a>
+            <NavLink href="https://www.instagram.com/uiuxvignanam/">
+                <a target="_blank">
                     <Icon icon={instagram} size={20} />
                 </a>
             </NavLink>

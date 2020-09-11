@@ -18,7 +18,7 @@ export default () => {
                     <Link to="/" label="Home" />
                     <Link to="/blog" label="articles" />
                     <Link to="/#projects" label="Projects" />
-                    <Link to="/Contact" label="Contact" />
+                    <Link to="/#contactus" label="Contact" />
                 </NavWrapper>
             </nav>
         </Header>

@@ -49,11 +49,11 @@ export default () => {
             <ProjectWrapper id="projects">
                 <div className="secHeader">
                     <h3>Projects</h3>
-                    <NavLink href="">
+                    {/* <NavLink href="">
                         <a>
                             <p>View all</p>
                         </a>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
                 <div className="secBody">
                     <Overview>
@@ -69,6 +69,23 @@ export default () => {
                     </Overview>
                 </div>
             </ProjectWrapper>
+            <ContactWrapper id="contactus">
+                <div className="secHeader">
+                    <h3>Contact Us</h3>
+                </div>
+                <div className="secBody">
+                    <Overview>
+                        <div className="overviewBody">
+                            <h4 style={{ opacity: '0.8', fontWeight: '400' }}>
+                                {'Feel free to reach out if you are looking for a developer. if you have any request or question, don’t hesitate to contact me .'}
+                            </h4>
+                            <div style={{ textAlign: 'left' }}>
+                                <a href="mailto: abc@example.com"> <p style={{textDecorationLine: 'underline'}}> vishalpaalakurthi@gmail.com </p> </a>
+                            </div>
+                        </div>
+                    </Overview>
+                </div>
+            </ContactWrapper>
             <style jsx="true">{`
                 .secHeader {
                     display: flex;
@@ -120,6 +137,14 @@ const BlogWrapper = styled.section`
 `;
 
 const ProjectWrapper = styled.section`
+    display: flex;
+    height: auto;
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 40px;  
+`;
+
+const ContactWrapper = styled.section`
     display: flex;
     height: auto;
     border-radius: 5px;
