@@ -22,6 +22,30 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::-webkit-scrollbar {
+            width: 14px;
+            height: 14px
+        }
+        ::-webkit-scrollbar-track {
+            background-color: transparent
+        }
+        ::-webkit-scrollbar-thumb,::-webkit-scrollbar-track {
+            border: 4px solid transparent;
+            background-clip: padding-box;
+            border-radius: 8px
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: ${(props) => props.theme.textcolor}
+        }
+        ::-webkit-scrollbar-button {
+            display: none;
+            width: 0;
+            height: 0
+        }
+        ::-webkit-scrollbar-corner {
+            background-color: transparent
+        }
+
   body {
     background: ${({ theme }) => theme.bgcolor};
     color: ${({ theme }) => theme.textcolor};
@@ -60,7 +84,51 @@ export const GlobalStyles = createGlobalStyle`
           display: flex;
           justify-content: center;
           align-items: center;
-        }
+  }
+
+  .gridWrapper {
+    display: flex;
+    height: auto;
+    border-radius: 15px;
+    flex-direction: column;
+    margin: 40px;  
+  }
+
+.secHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 5px;
+}
+.secBody {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+}
+.overviewBody {
+    flex-direction: column;
+    margin: 10px 5px;
+    background: transparent;
+    flex:1;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+  .overview {
+      display: flex;
+      min-height: 100px;
+      height: auto;
+      border-radius: 1px solid black;
+      width: 50%;
+  }
+
+  @media (max-width: 600px) {
+          .overview {
+            width: 100%;
+          }
+    }
 
 `;
 

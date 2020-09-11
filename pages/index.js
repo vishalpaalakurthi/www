@@ -7,7 +7,6 @@ import { arrowRight } from 'react-icons-kit/feather';
 import { RecentArticles } from "../assets/metadata/Metadata";
 
 export default () => {
-    debugger;
     return (
         <>
             <ProfileWrapper>
@@ -17,7 +16,7 @@ export default () => {
                     <Social />
                 </Header>
             </ProfileWrapper>
-            <BlogWrapper>
+            <div class="gridWrapper">
                 <div className="secHeader">
                     <h3>Recent Published</h3>
                     <NavLink href="/blog">
@@ -31,7 +30,7 @@ export default () => {
                     {RecentArticles.length === 0 ? <></>
                         :
                         RecentArticles.map( (article, index) => {
-                        return (<Overview>
+                        return (<div className="overview">
                             <div className="overviewBody">
                                 <h4 style={{ opacity: '0.8', fontWeight: '500' }}>{article.title}</h4>
                                 <h5 style={{ opacity: '0.8', fontWeight: '400' }}>{article.shortNote}</h5>
@@ -41,22 +40,17 @@ export default () => {
                                     </NavLink>
                                 </div>
                             </div>
-                        </Overview>)
+                        </div>)
                         } )
                     }
                 </div>
-            </BlogWrapper>
-            <ProjectWrapper id="projects">
+            </div>
+            <div class="gridWrapper" id="projects">
                 <div className="secHeader">
                     <h3>Projects</h3>
-                    {/* <NavLink href="">
-                        <a>
-                            <p>View all</p>
-                        </a>
-                    </NavLink> */}
                 </div>
                 <div className="secBody">
-                    <Overview>
+                    <div className="overview">
                         <div className="overviewBody">
                             <h4 style={{ opacity: '0.8', fontWeight: '500' }}>Project Name</h4>
                             <h5 style={{ opacity: '0.8', fontWeight: '400' }}>
@@ -66,15 +60,15 @@ export default () => {
                                 <a> <Icon icon={arrowRight} /> </a>
                             </div>
                         </div>
-                    </Overview>
+                    </div>
                 </div>
-            </ProjectWrapper>
-            <ContactWrapper id="contactus">
+            </div>
+            <div class="gridWrapper" id="contactus">
                 <div className="secHeader">
                     <h3>Contact Us</h3>
                 </div>
                 <div className="secBody">
-                    <Overview>
+                    <div className="overview">
                         <div className="overviewBody">
                             <h4 style={{ opacity: '0.8', fontWeight: '400' }}>
                                 {'Feel free to reach out if you are looking for a developer. if you have any request or question, don’t hesitate to contact me .'}
@@ -83,32 +77,9 @@ export default () => {
                                 <a href="mailto: vishalpaalakurthi@gmail.com"> <p style={{textDecorationLine: 'underline'}}> vishalpaalakurthi@gmail.com </p> </a>
                             </div>
                         </div>
-                    </Overview>
+                    </div>
                 </div>
-            </ContactWrapper>
-            <style jsx="true">{`
-                .secHeader {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin: 20px 5px;
-                }
-                .secBody {
-                    display: flex;
-                    height: auto;
-                    flex-wrap: wrap;
-                    padding: 0px;
-                    margin: 0px;
-                }
-                .overviewBody {
-                    flex-direction: column;
-                    margin: 10px 5px;
-                    background: transparent;
-                    flex:1;
-                    border-radius: 5px;
-                    padding: 5px;
-                }
-            `}</style>
+            </div>
         </>
     )
 }
@@ -126,38 +97,6 @@ const ProfileWrapper = styled.header`
     border-radius: 15px;
     padding: 0px 10px; 
     margin: 40px;  
-`;
-
-const BlogWrapper = styled.section`
-    display: flex;
-    height: auto;
-    border-radius: 15px;
-    flex-direction: column;
-    margin: 40px;  
-`;
-
-const ProjectWrapper = styled.section`
-    display: flex;
-    height: auto;
-    border-radius: 5px;
-    flex-direction: column;
-    margin: 40px;  
-`;
-
-const ContactWrapper = styled.section`
-    display: flex;
-    height: auto;
-    border-radius: 5px;
-    flex-direction: column;
-    margin: 40px;  
-`;
-
-const Overview = styled.div`
-    display: flex;
-    min-height: 100px;
-    height: auto;
-    border-radius: 1px solid black;
-    width: 50%;
 `;
 
 const Bucket = styled.div`
