@@ -85,7 +85,7 @@ here, to execute the queries we required a query that to be passed dynamically. 
 ```java
 @GetMapping("/query")
 public List<Object> getDataUsingQuery(@RequestParam("query") String query) {
-    List<Object> dataByQuery = cassandraService.getDataByQuery(node.trim(), query.trim());
+    List<Object> dataByQuery = cassandraService.getDataByQuery(query.trim());
     return dataByQuery;
 }
 ```
