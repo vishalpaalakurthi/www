@@ -9,17 +9,15 @@ export const meta = {
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-This blog refer to building a simple and easy Cassandra workbench using well known and mostly used technology stack.
+This blog refers to building a simple and easy Cassandra workbench using well known and mostly used technology stack.
 
-                     
-
-> too lazy to do it
+*"too lazy to do it"*
 
 Above quotation saved lots of my time, increased my productivity and switched me to create this workbench.
 
                   
 
-before going to the key point.  —>
+before going to the key point. 
 
 ### let's understand what is actually **Cassandra** is ?
 
@@ -53,3 +51,57 @@ Finally after having thoughts as a back-end developer  i have chosen Datastax fo
 - Thymeleaf
 - Cassandra CQL (for verifying data)
 - Maven build tool
+
+Now, What i have done for building a simple workbench is very simple.
+
+Datastax is providing a dependencies where we create maintain Cassandra session and execute queries.
+
+We can configure session and execute CQL queries as below.
+
+```java
+Cluster cluster = Cluster.builder().addContactPoint(ipAddress)
+                  .withCredentials(userName, password)
+                  .withPort(9042)
+                  .withoutJMXReporting().build();
+   
+Session session = cluster.connect(keyspace); //keyspace is optional
+```
+
+```java
+*String query = "select * from keyspace.tableName";
+session.execute(query);*
+```
+
+we really get a question like how we can handle the exceptions ?
+
+*we no need of worrying about exceptions because the Datastax dependencies are already taking care internally and returning proper exception messages as below.*
+
+*[Invalid query] message="unconfigured table test1"*
+
+As i am using spring boot, i have defined a singleton beans then i can use session any where in the application.
+
+here, to execute the queries we required a query that to be passed dynamically. so i have created a REST API using spring boot. it accepts query as string and returns list of rows.
+
+```java
+@GetMapping("/query")
+public List<Object> getDataUsingQuery(@RequestParam("query") String query) {
+    List<Object> dataByQuery = cassandraService.getDataByQuery(node.trim(), query.trim());
+    return dataByQuery;
+}
+```
+
+right now, i restricted my workbench for executing only select queries. we can enhance it further.
+
+Finally, we should have a proper UI for executing query and displaying the results.
+
+To make it as simple as possible, i am not attaching any images here. please do refer my GitHub URL for source code and sample UI.
+
+[vishalpaalakurthi/cassandraboard](https://github.com/vishalpaalakurthi/cassandraboard)
+
+### Referneces
+
+- [https://www.datastax.com/](https://www.datastax.com/)
+- [https://cassandra.apache.org/doc/latest/cql/](https://cassandra.apache.org/doc/latest/cql/)
+- [https://www.baeldung.com/spring-data-cassandra-tutorial](https://www.baeldung.com/spring-data-cassandra-tutorial)
+
+Thank you for reading my first blog, please keep in touch for my next one. :-)
