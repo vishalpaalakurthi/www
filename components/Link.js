@@ -30,4 +30,5 @@ const Bucket = styled.div`
     width: 30px;
     z-index: -1;
     opacity: 0.8;
+    margin: 5px 0px;
 `;

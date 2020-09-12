@@ -50,9 +50,8 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.bgcolor};
     color: ${({ theme }) => theme.textcolor};
-    display: flex;
+    display: grid;
     overflow-x: hidden;
-    flex-direction: column;
     font-family: Poppins;
     font-style: normal;
     margin: 0;
@@ -131,7 +130,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   article {
-      display: inline-grid;
+      display: grid;
+      padding: 0px 50px;
   }
 
   @media (max-width: 600px) {
@@ -141,6 +141,9 @@ export const GlobalStyles = createGlobalStyle`
           .blogWrapper {
             margin: 30px;
           }
+          article {
+            line-height: 40px;
+         }
     }
 
 `;
