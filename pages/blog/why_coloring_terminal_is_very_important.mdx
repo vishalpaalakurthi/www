@@ -2,7 +2,7 @@ import BlogPost from '../../components/BlogPost'
 
 export const meta = { title: 'Why coloring terminal is very important!', description: 'Add background color to your terminal to avoid negative impact.', date: 'Sep 16, 2020', readTime: 1 }
 
-export default ({ children }) => {children};
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 Developers who works for testing their applications or test cases on cloud environments instead of local environments are definitely will use terminals (i.e; Linux, poweshell and Gitbash etc).
 
