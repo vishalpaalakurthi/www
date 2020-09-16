@@ -1,0 +1,28 @@
+import BlogPost from '../../components/BlogPost'
+
+export const meta = { title: 'Why coloring terminal is very important!', description: 'Add background color to your terminal to avoid negative impact.', date: 'Sep 16, 2020', readTime: 1 }
+
+export default ({ children }) => {children};
+
+Developers who works for testing their applications or test cases on cloud environments instead of local environments are definitely will use terminals (i.e; Linux, poweshell and Gitbash etc).
+
+Everyday we use to work on multiple tasks at a time. some times we do refer production environments for logs and to re-produce the same issue.
+
+On peak times, we do wants to complete the tasks as faster as possible. same time we may confuse our selves while doing the modifications/deployments.
+
+Then, definitely will get confused. we might do changes in production environment instead local environment. this definitely creates a huge problem, production server might stop because of simple thing.
+
+To avoid this, terminals provide adding background color to the sessions. Using that, we can identify the environment we are working on.
+
+As i use putty mostly, i am providing steps to add background color to session.
+
+1. Open Putty
+2. Select saved session and click on load button
+3. On right side category, select Colours tab
+4. Go to "select a colour to adjust block", then select "Default background" option.
+5. Now select modify, then select color and click OK.
+6. go to session tab, click Save button.
+
+Now its got changed to selected background color and we might avoid a simple mistakes.
+
+Thanks for reading my blog, please keep in touch for my next blog :-)
