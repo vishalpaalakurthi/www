@@ -131,6 +131,10 @@ export const GlobalStyles = createGlobalStyle`
       margin: 40px;
       display: flex;
       flex-direction: column;
+      background: rgb(32, 28, 41);
+      border: 1px solid rgb(49, 45, 60);
+      box-shadow: rgb(0, 0, 0) 0px 4px 10px;
+      border-radius: 5px;
   }
 
   article {
