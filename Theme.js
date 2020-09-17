@@ -135,7 +135,7 @@ export const GlobalStyles = createGlobalStyle`
 
   article {
       display: grid;
-      padding: 0px 35px;
+      padding: 0px 10px;
   }
 
   @media (max-width: 600px) {
