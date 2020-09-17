@@ -147,7 +147,7 @@ export const GlobalStyles = createGlobalStyle`
             width: 100%;
           }
           .blogWrapper {
-            margin: 30px;
+            margin: 15px;
           }
           article {
             line-height: 40px;
