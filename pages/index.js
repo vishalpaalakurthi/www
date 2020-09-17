@@ -69,7 +69,7 @@ export default () => {
                 </div>
                 <div className="secBody">
                     <div className="overview">
-                        <div className="overviewBody">
+                        <div className="overviewBody" style={{background:'transparent', border:'none'}}>
                             <h4 style={{ opacity: '0.8', fontWeight: '400' }}>
                                 {'Feel free to reach out if you are looking for a developer. if you have any request or question, don’t hesitate to contact me .'}
                             </h4>

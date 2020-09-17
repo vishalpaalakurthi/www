@@ -6,8 +6,8 @@ import Social from './components/Social';
 
 export const theme = {
     light: {
-        bgcolor: '#FFFFFF',
-        textcolor: '#000000'
+        bgcolor: '#000000',
+        textcolor: '#FFFFFF'
     }
 }
 
@@ -109,10 +109,14 @@ export const GlobalStyles = createGlobalStyle`
 .overviewBody {
     flex-direction: column;
     margin: 10px 5px;
-    background: transparent;
-    flex:1;
+    flex: calc(559440px - 99900%);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 10px;
+    background: #201c29;
+    border: 1px solid #312d3c;
+    box-shadow: 0 4px 10px #000;
+    color: white;
+    flex-grow: 1;
 }
 
   .overview {
@@ -131,7 +135,7 @@ export const GlobalStyles = createGlobalStyle`
 
   article {
       display: grid;
-      padding: 0px 50px;
+      padding: 0px 35px;
   }
 
   @media (max-width: 600px) {
