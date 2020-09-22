@@ -6,7 +6,7 @@ import Social from './components/Social';
 
 export const theme = {
     light: {
-        bgcolor: '#000000',
+        bgcolor: 'darkorange',
         textcolor: '#FFFFFF'
     }
 }
@@ -112,9 +112,9 @@ export const GlobalStyles = createGlobalStyle`
     flex: calc(559440px - 99900%);
     border-radius: 5px;
     padding: 5px 10px;
-    background: #201c29;
-    border: 1px solid #312d3c;
-    box-shadow: 0 4px 10px #000;
+    background: darkorange;
+    border: 1px solid darkorange;
+    box-shadow: 0 4px 10px lightyellow;
     color: white;
     flex-grow: 1;
 }
@@ -131,9 +131,9 @@ export const GlobalStyles = createGlobalStyle`
       margin: 40px;
       display: flex;
       flex-direction: column;
-      background: rgb(32, 28, 41);
-      border: 1px solid rgb(49, 45, 60);
-      box-shadow: rgb(0, 0, 0) 0px 4px 10px;
+      background: darkorange;
+      border: 1px solid darkorange;
+      box-shadow: lightyellow 0px 4px 10px;
       border-radius: 5px;
   }
 

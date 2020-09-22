@@ -38,5 +38,5 @@ const Header = styled.header`
     display: flex;
     padding: 5px;
     z-index: 999;
-    background: #000000;
+    background: darkorange;
 `;
