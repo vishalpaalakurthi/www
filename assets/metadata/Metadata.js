@@ -1,5 +1,11 @@
 
 export var RecentArticles = [{
+    title: "How to refresh/reload application properties runtime in spring boot ?",
+    shortNote: "In this tutorial, we are going to learn how to reload application properties in spring boot.",
+    publishedDate: "2020-09-24",
+    author: "Vishal Paalakurthi",
+    path: "blog/Reload_application_properties_runtime_in_springboot"
+},{
     title: "Why coloring terminal is very important!",
     shortNote: "Add background color to your terminal to avoid negative impact.",
     publishedDate: "2020-09-16",
@@ -14,6 +20,12 @@ export var RecentArticles = [{
 }]
 
 export var Articles = [{
+    title: "How to refresh/reload application properties runtime in spring boot ?",
+    shortNote: "In this tutorial, we are going to learn how to reload application properties in spring boot.",
+    publishedDate: "2020-09-24",
+    author: "Vishal Paalakurthi",
+    path: "blog/Reload_application_properties_runtime_in_springboot"
+},{
     title: "Why coloring terminal is very important!",
     shortNote: "Add background color to your terminal to avoid negative impact.",
     publishedDate: "2020-09-16",
