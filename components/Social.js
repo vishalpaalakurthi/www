@@ -27,6 +27,11 @@ export default () => {
                     <Icon icon={instagram} size={20} />
                 </a>
             </NavLink>
+             <NavLink href="https://dev.to/vishalpaalakurthi">
+                <a target="_blank">
+                    <h4 style={{fontSize: '15px', paddingTop: '5px'}}>DEV</h4>
+                </a>
+            </NavLink>
             <style jsx="true">
                 {`
                     a {
