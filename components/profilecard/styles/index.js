@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
+    margin-top: 100px;
 `;
 
 export const Inner = styled.div`
@@ -13,12 +14,13 @@ export const Inner = styled.div`
 export const Title = styled.h1`
     color: ${({ theme }) => theme.primarycolor};
     opacity: 0.8;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 400;
 `;
 
 export const SubTitle = styled.h5`
     margin: 5px;
-    font-weight: 600;
+    font-weight: 400;
 `;
 
 export const Social = styled.div``;

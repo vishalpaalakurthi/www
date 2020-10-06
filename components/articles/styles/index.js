@@ -43,11 +43,12 @@ export const PrimaryTitle = styled.h2`
     color: ${({ theme }) => theme.primarycolor};
     opacity: 0.8;
     letter-spacing: 1px;
+    font-size: 30px;
 `;
 
 export const Title = styled.h3`
     margin: 2px;
-    font-weight: 600;
+    font-weight: 400;
     color: ${({ theme }) => theme.primarycolor};
     opacity: 0.8;
     font-size: 18px;
@@ -59,11 +60,12 @@ export const SubTitle = styled.h5`
     color: ${({ theme }) => theme.primarycolor};
     opacity: 0.5;
     font-size: 15px;
+    font-weight: 300;
 `;
 
 export const Description = styled.p`
     margin: 2px;
-    font-weight: 500;
+    font-weight: 300;
     opacity: 0.8;
     font-size: 12px;
 `;
@@ -86,4 +88,5 @@ export const Message = styled.div`
     margin: 20px;
     padding: 10px 10px;
     font-size: 13px;
+    font-weight: 300;
 `;
