@@ -3,11 +3,17 @@ import { MDXProvider } from '@mdx-js/react';
 import Nav from './components/Nav'
 import Home from './pages/index'
 import Social from './components/Social';
+import NavBar from './components/navbar';
 
 export const theme = {
     light: {
         bgcolor: 'darkorange',
         textcolor: '#FFFFFF'
+    },
+    dark: {
+        bgcolor: '#100e17',
+        textcolor: '#FFFFFF',
+        primarycolor: 'limegreen'
     }
 }
 
@@ -157,7 +163,7 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const ThemeWrapper = ({ children }) => {
-    const [themed, setThemed] = React.useState(theme.light);
+    const [themed, setThemed] = React.useState(theme.dark);
 
     return (
         <>
@@ -165,7 +171,8 @@ export const ThemeWrapper = ({ children }) => {
                 <ThemeProvider theme={themed}>
                     <GlobalStyles />
                     <Wrapper>
-                        <Nav />
+                        {/* <Nav /> */}
+                        <NavBar />
                         <MDXProvider>
                             {children}
                         </MDXProvider>

@@ -4,38 +4,43 @@ import NavLink from 'next/link';
 import Icon from 'react-icons-kit';
 import { github, linkedin, instagram, twitter } from 'react-icons-kit/fa';
 
-export default () => {
+export default ({size}) => {
     return (
         <SocialWrapper>
             <NavLink href="https://www.linkedin.com/in/vishal-paalakurthi-11481a8a">
                 <a target="_blank">
-                    <Icon icon={linkedin} size={20} />
+                    <Icon icon={linkedin} size={size} />
                 </a>
             </NavLink>
             <NavLink href="https://github.com/vishalpaalakurthi/">
                 <a target="_blank">
-                    <Icon icon={github} size={20} />
+                    <Icon icon={github} size={size} />
                 </a>
             </NavLink>
             <NavLink href="https://twitter.com/VPaalakurthi">
                 <a target="_blank">
-                    <Icon icon={twitter} size={20} />
+                    <Icon icon={twitter} size={size} />
                 </a>
             </NavLink>
             <NavLink href="https://www.instagram.com/uiuxvignanam/">
                 <a target="_blank">
-                    <Icon icon={instagram} size={20} />
+                    <Icon icon={instagram} size={size} />
                 </a>
             </NavLink>
              <NavLink href="https://dev.to/vishalpaalakurthi">
                 <a target="_blank">
-                    <h4 style={{fontSize: '15px', paddingTop: '5px'}}>DEV</h4>
+                    <h4 style={{fontSize: {size}, paddingTop: '5px'}}>DEV</h4>
                 </a>
             </NavLink>
             <style jsx="true">
                 {`
                     a {
                         margin: 10px;
+                        transition: 0.3s ease-in;
+                    }
+                    a:hover {
+                        color: limegreen;
+                        transition: 0.3s ease-in-out;
                     }
                 `}
             </style>
