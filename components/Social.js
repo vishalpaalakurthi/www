@@ -39,7 +39,7 @@ export default ({size}) => {
                         transition: 0.3s ease-in;
                     }
                     a:hover {
-                        color: limegreen;
+                        color: ${({theme}) => theme.primarycolor};
                         transition: 0.3s ease-in-out;
                     }
                 `}

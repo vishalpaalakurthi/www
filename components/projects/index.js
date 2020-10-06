@@ -20,7 +20,7 @@ export default () => {
                                 <Projects.SubTitle> {article.shortNote} </Projects.SubTitle>
                                 <Projects.Navigation>
                                     <NavLink href={article.path}>
-                                        <a> {'view more '} <Icon icon={arrowRight} /></a>
+                                        <a> {'read more '} <Icon icon={arrowRight} /></a>
                                     </NavLink>
                                 </Projects.Navigation>
                             </Projects.Project>

@@ -25,7 +25,7 @@ export default ({ to, label }) => {
 
 const Bucket = styled.div`
     position: absolute;
-    background: limegreen;
+    background: ${({theme}) => theme.primarycolor};
     padding: 10px 15px;
     width: 30px;
     z-index: -1;

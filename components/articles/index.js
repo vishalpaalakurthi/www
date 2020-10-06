@@ -20,7 +20,7 @@ export default ({limit}) => {
                                 <Articles.SubTitle> {article.shortNote} </Articles.SubTitle>
                                 <Articles.Navigation>
                                     <NavLink href={article.path}>
-                                        <a> {'view more '} <Icon icon={arrowRight} /></a>
+                                        <a> {'read more '} <Icon icon={arrowRight} /></a>
                                     </NavLink>
                                 </Articles.Navigation>
                             </Articles.Article>

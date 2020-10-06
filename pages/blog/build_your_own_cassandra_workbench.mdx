@@ -1,4 +1,4 @@
-import BlogPost from '../../components/BlogPost'
+import BlogPost from '../../components/blogpost'
 
 export const meta = {
   title: 'How to build your own Cassandra workbench',
@@ -68,8 +68,8 @@ Session session = cluster.connect(keyspace); //keyspace is optional
 ```
 
 ```java
-*String query = "select * from keyspace.tableName";
-session.execute(query);*
+String query = "select * from keyspace.tableName";
+session.execute(query);
 ```
 
 we really get a question like how we can handle the exceptions ?
