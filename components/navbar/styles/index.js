@@ -5,6 +5,10 @@ export const Container = styled.div`
     display: flex;
     margin: 5px 10px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    background: ${({theme}) => theme.bgcolor};
+    z-index: 1;
 `;
 
 export const Inner = styled.div`
