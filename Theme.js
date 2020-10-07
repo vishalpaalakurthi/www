@@ -65,23 +65,12 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   }
+
   a{
     text-decoration:none;
     color:inherit;
   }
-  h1, h4, p {
-      margin: 10px 0px;
-  }
-  h1 {
-      font-size: 30px;
-  }
-  h3 {
-      font-weight: 600;
-      font-size: 20px;
-  }
-  .sectionTitle {
-      color: #00CD37;
-  }
+
   footer {
           width: 100%;
           height: 100px;
@@ -91,74 +80,8 @@ export const GlobalStyles = createGlobalStyle`
           align-items: center;
   }
 
-  .gridWrapper {
-    display: flex;
-    height: auto;
-    border-radius: 15px;
-    flex-direction: column;
-    margin: 40px;  
-  }
-
-.secHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 5px;
-}
-.secBody {
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px;
-}
-.overviewBody {
-    flex-direction: column;
-    margin: 10px 5px;
-    flex: calc(559440px - 99900%);
-    border-radius: 5px;
-    padding: 5px 10px;
-    background: darkorange;
-    border: 1px solid darkorange;
-    box-shadow: 0 4px 10px lightyellow;
-    color: white;
-    flex-grow: 1;
-}
-
-  .overview {
-      display: flex;
-      min-height: 100px;
-      height: auto;
-      border-radius: 1px solid black;
-      width: 50%;
-  }
-
-  .blogWrapper {
-      margin: 40px;
-      display: flex;
-      flex-direction: column;
-      background: darkorange;
-      border: 1px solid darkorange;
-      box-shadow: lightyellow 0px 4px 10px;
-      border-radius: 5px;
-  }
-
-  article {
-      display: grid;
-      padding: 0px 10px;
-  }
-
   @media (max-width: 600px) {
-          .overview {
-            width: 100%;
-          }
-          .blogWrapper {
-            margin: 15px;
-          }
-          article {
-            line-height: 40px;
-         }
-    }
+ }
 
 `;
 

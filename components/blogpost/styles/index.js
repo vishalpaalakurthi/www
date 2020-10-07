@@ -40,7 +40,8 @@ export const SubHeader = styled.div`
 
 export const Article = styled.article`
      font-size: 15px;
-     font-weight: 300;
+     font-weight: 400;
+     line-height: 2em;
 `;
 
 export const Body = styled.div`
@@ -51,6 +52,9 @@ export const Body = styled.div`
         border-left: 1px solid ${({theme}) => theme.primarycolor};
         padding: 5px 10px;
         font-style: italic;
+    }
+
+    & p {
     }
 
     & h3 {
@@ -74,11 +78,15 @@ export const Body = styled.div`
         color: ${({theme}) => theme.primarycolor};
         filter: hue-rotate(45deg);
         font-weight: 500;
+        white-space: pre-line;
     }
 
     & code {
         font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
         font-size: 13px;
+    }
+
+    & a {
     }
 
     & a:hover {
