@@ -47,7 +47,7 @@ export const Body = styled.div`
     display: flex;
     flex-direction: column;
 
-    & em{
+    & blockquote{
         border-left: 1px solid ${({theme}) => theme.primarycolor};
         padding: 5px 10px;
         font-style: italic;
@@ -61,6 +61,7 @@ export const Body = styled.div`
 
     & ol, ul {
         border-left: 1px solid ${({theme}) => theme.primarycolor};
+        font-weight: 400;
         li {
             color: ${({theme}) => theme.primarycolor};
             filter: hue-rotate(45deg);
@@ -86,5 +87,13 @@ export const Body = styled.div`
         transition: 0.3s ease-in-out;
         color: ${({theme}) => theme.primarycolor};
         opacity: 0.8;
+    }
+
+    & em {
+        color: ${({theme}) => theme.primarycolor};
+    }
+
+    & strong {
+        font-weight: 600;
     }
 `;

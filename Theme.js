@@ -13,7 +13,7 @@ export const theme = {
     dark: {
         bgcolor: '#100e17',
         textcolor: '#FFFFFF',
-        primarycolor: '#d2691e'
+        primarycolor: '#ff6363'
     }
 }
 

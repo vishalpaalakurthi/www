@@ -32,18 +32,6 @@ export default ({size}) => {
                     <h4 style={{fontSize: {size}, paddingTop: '5px'}}>DEV</h4>
                 </a>
             </NavLink>
-            <style jsx="true">
-                {`
-                    a {
-                        margin: 10px;
-                        transition: 0.3s ease-in;
-                    }
-                    a:hover {
-                        color: ${({theme}) => theme.primarycolor};
-                        transition: 0.3s ease-in-out;
-                    }
-                `}
-            </style>
         </SocialWrapper>
     )
 }
@@ -52,4 +40,13 @@ const SocialWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    & a {
+        margin: 10px;
+        transition: 0.3s ease-in;
+    }
+    & a:hover {
+        color: ${({theme}) => theme.primarycolor};
+        transition: 0.3s ease-in-out;
+    }
 `;
