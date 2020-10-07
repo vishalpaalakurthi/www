@@ -86,7 +86,7 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const ThemeWrapper = ({ children }) => {
-    const [themed, setThemed] = React.useState(theme.dark);
+    const [themed, setThemed] = React.useState(theme.light);
 
     return (
         <>

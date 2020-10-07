@@ -51,14 +51,14 @@ export const Title = styled.h3`
     font-weight: 400;
     color: ${({ theme }) => theme.primarycolor};
     opacity: 0.8;
-    font-size: 18px;
+    font-size: 20px;
 `;
 
 export const SubTitle = styled.h5`
     margin: 2px;
     font-weight: normal;
     color: ${({ theme }) => theme.primarycolor};
-    opacity: 0.5;
+    opacity: 0.6;
     font-size: 15px;
     font-weight: 400;
 `;
