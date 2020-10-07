@@ -60,7 +60,7 @@ export const SubTitle = styled.h5`
     color: ${({ theme }) => theme.primarycolor};
     opacity: 0.5;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 `;
 
 export const Description = styled.p`

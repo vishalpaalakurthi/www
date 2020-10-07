@@ -1,14 +1,14 @@
 import styled, { createGlobalStyle, ThemeProvider, ThemeContext } from 'styled-components';
 import { MDXProvider } from '@mdx-js/react';
-import Nav from './components/Nav'
 import Home from './pages/index'
 import Social from './components/Social';
 import NavBar from './components/navbar';
 
 export const theme = {
     light: {
-        bgcolor: 'darkorange',
-        textcolor: '#FFFFFF'
+        bgcolor: '#FFFFFF',
+        textcolor: '#100e17',
+        primarycolor: '#ff6363'
     },
     dark: {
         bgcolor: '#100e17',
@@ -90,7 +90,7 @@ export const ThemeWrapper = ({ children }) => {
 
     return (
         <>
-            <ThemeContext.Provider value={themed}>
+            <ThemeContext.Provider value={{themed, setThemed, theme}}>
                 <ThemeProvider theme={themed}>
                     <GlobalStyles />
                     <Wrapper>

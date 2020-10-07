@@ -73,7 +73,7 @@ export const Body = styled.div`
     }
 
     & pre {
-        background: linear-gradient(45deg, black, transparent);
+        background: #100e17;
         padding: 10px 20px;
         color: ${({theme}) => theme.primarycolor};
         filter: hue-rotate(45deg);
