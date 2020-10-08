@@ -4,7 +4,7 @@ import {ThemeContext } from 'styled-components';
 export default () => {
     const { theme, themed, setThemed } = useContext(ThemeContext);
 
-    const [ ti, setti ] = useState(0);
+    const [ ti, setti ] = useState(1);
 
     function onChangeTheme () {
         if( ti === 0 ) {
