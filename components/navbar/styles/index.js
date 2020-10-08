@@ -23,6 +23,7 @@ export const NavLinks = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const LinkWrapper = styled.div`

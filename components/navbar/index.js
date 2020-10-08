@@ -1,5 +1,6 @@
 import NavBar from './elements';
 import Logo from '../Logo';
+import Pallette from '../pallette';
 
 const NavBarContainer = () => {
     return (
@@ -20,6 +21,7 @@ const NavBarContainer = () => {
                 <NavBar.LinkWrapper>
                     <NavBar.Link  to="/#contactus" label="Contact" />
                 </NavBar.LinkWrapper>
+                <Pallette />
             </NavBar.Links>
         </NavBar>
 
