@@ -9,6 +9,7 @@ export const Container = styled.div`
     top: 0;
     background: ${({theme}) => theme.bgcolor};
     z-index: 1;
+    transition: background 0.5s ease-out;
 `;
 
 export const Inner = styled.div`
