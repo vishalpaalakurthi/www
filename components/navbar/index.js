@@ -21,7 +21,6 @@ const NavBarContainer = () => {
                 <NavBar.LinkWrapper>
                     <NavBar.Link  to="/#contactus" label="Contact" />
                 </NavBar.LinkWrapper>
-                <Pallette />
             </NavBar.Links>
         </NavBar>
 
