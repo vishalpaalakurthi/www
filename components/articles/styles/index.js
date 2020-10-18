@@ -41,7 +41,6 @@ export const Article = styled.div`
 export const PrimaryTitle = styled.h2`
     font-weight: 600;
     color: ${({ theme }) => theme.primarycolor};
-    opacity: 0.8;
     letter-spacing: 1px;
     font-size: 30px;
 `;
@@ -50,7 +49,6 @@ export const Title = styled.h3`
     margin: 2px;
     font-weight: 400;
     color: ${({ theme }) => theme.primarycolor};
-    opacity: 0.8;
     font-size: 20px;
 `;
 
@@ -58,21 +56,20 @@ export const SubTitle = styled.h5`
     margin: 2px;
     font-weight: normal;
     color: ${({ theme }) => theme.primarycolor};
-    opacity: 0.6;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
 `;
 
 export const Description = styled.p`
     margin: 2px;
     font-weight: 300;
-    opacity: 0.8;
     font-size: 12px;
 `;
 
 export const Navigation = styled.div`
     transition: 0.3s ease-in;
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 40px;
     &:hover {
         letter-spacing: 1px;
         transition: 0.3s ease-in-out;

@@ -29,6 +29,6 @@ const Bucket = styled.div`
     padding: 10px 15px;
     width: 30px;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.6;
     margin: 5px 0px;
 `;

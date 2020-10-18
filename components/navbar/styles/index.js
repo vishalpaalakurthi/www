@@ -25,6 +25,7 @@ export const NavLinks = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
 `;
 
 export const LinkWrapper = styled.div`

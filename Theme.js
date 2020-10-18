@@ -6,9 +6,10 @@ import NavBar from './components/navbar';
 
 export const theme = {
     light: {
-        bgcolor: '#FFFFFF',
+        bgcolor: '#EEF0F1',
         textcolor: '#100e17',
-        primarycolor: '#ff6363'
+        primarycolor: '#100e17',
+        blogBg: '#FFFFFF'
     },
     dark: {
         bgcolor: '#100e17',

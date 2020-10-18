@@ -12,17 +12,22 @@ export const Container = styled.div`
 export const Inner = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;
+    padding: 10px 20px;
     justify-content: space-around;
+    background: ${({theme}) => theme.blogBg};
+    border-radius: 5px;
 `;
 
 export const Title = styled.h2`
-     font-size: 30px;
+     font-size: 40px;
      font-weight: 500;
+     line-height: 40px;
 `;
 
 export const TextItem = styled.p`
     margin: 5px 10px;
+    font-weight: 500;
+    font-size: 16px;
 `;
 
 export const Header = styled.div`
@@ -64,7 +69,7 @@ export const Body = styled.div`
     & h3 {
         color: ${({theme}) => theme.primarycolor};
         filter: hue-rotate(45deg);
-        opacity: 300;
+        opacity: 500;
     }
 
     & ol, ul {
@@ -77,17 +82,18 @@ export const Body = styled.div`
     }
 
     & pre {
-        background: #100e17;
-        padding: 10px 20px;
-        color: ${({theme}) => theme.primarycolor};
-        filter: hue-rotate(45deg);
+        background: ${({theme}) => theme.primarycolor};
+        padding: 20px 30px;
+        color: ${({theme}) => theme.bgcolor};
         font-weight: 500;
         white-space: pre-line;
+        border-radius: 5px;
     }
 
     & code {
         font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
-        font-size: 13px;
+        font-size: 15px;
+        font-weight: 400;
     }
 
     & a {

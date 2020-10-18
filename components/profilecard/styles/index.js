@@ -13,13 +13,14 @@ export const Inner = styled.div`
 
 export const Title = styled.h1`
     color: ${({ theme }) => theme.primarycolor};
-    opacity: 0.8;
-    font-size: 50px;
+    font-size: 60px;
+    line-height: 50px;
     font-weight: 400;
 `;
 
 export const SubTitle = styled.h5`
     margin: 5px;
+    font-size: 18px;
     font-weight: 400;
 `;
 
