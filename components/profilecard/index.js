@@ -10,7 +10,7 @@ export default () => {
                 Developer | Freelancer | Product Development
             </ProfileCard.SubTitle>
             <ProfileCard.Social>
-                <Social size={20} />
+                <Social size={23} />
             </ProfileCard.Social>
         </ProfileCard>
     )

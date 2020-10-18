@@ -29,7 +29,7 @@ export default ({size}) => {
             </NavLink>
              <NavLink href="https://dev.to/vishalpaalakurthi">
                 <a target="_blank">
-                    <h4 style={{fontSize: {size}, paddingTop: '5px'}}>DEV</h4>
+                    <h3 style={{fontSize: {size}, paddingTop: '5px'}}>DEV</h3>
                 </a>
             </NavLink>
         </SocialWrapper>
@@ -40,13 +40,14 @@ const SocialWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 10px 0px;
 
     & a {
         margin: 10px;
         transition: 0.3s ease-in;
     }
     & a:hover {
-        color: ${({theme}) => theme.primarycolor};
+        color: ${({theme}) => theme.highlitecolor};
         transition: 0.3s ease-in-out;
     }
 `;

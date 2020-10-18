@@ -4,6 +4,7 @@ import NavLink from 'next/link';
 export const Container = styled.div`
     display: flex;
     margin: 5px 10px;
+    padding: 5px 0px;
     width: 100%;
     position: sticky;
     top: 0;

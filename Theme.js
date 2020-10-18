@@ -9,7 +9,8 @@ export const theme = {
         bgcolor: '#EEF0F1',
         textcolor: '#100e17',
         primarycolor: '#100e17',
-        blogBg: '#FFFFFF'
+        blogBg: '#FFFFFF',
+        highlitecolor: '#ff6363'
     },
     dark: {
         bgcolor: '#100e17',

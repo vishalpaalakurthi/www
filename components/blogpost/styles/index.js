@@ -12,9 +12,8 @@ export const Container = styled.div`
 export const Inner = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 10px;
     justify-content: space-around;
-    background: ${({theme}) => theme.blogBg};
     border-radius: 5px;
 `;
 
@@ -51,6 +50,10 @@ export const Article = styled.article`
      font-size: 15px;
      font-weight: 400;
      line-height: 2em;
+
+    @media(max-width: 600px) {
+        font-size: 18px;
+    }
 `;
 
 export const Body = styled.div`
@@ -86,7 +89,7 @@ export const Body = styled.div`
         padding: 20px 30px;
         color: ${({theme}) => theme.bgcolor};
         font-weight: 500;
-        white-space: pre-line;
+        white-space: break-spaces;
         border-radius: 5px;
     }
 
