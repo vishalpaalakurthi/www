@@ -85,12 +85,13 @@ export const Body = styled.div`
     }
 
     & pre {
-        background: ${({theme}) => theme.primarycolor};
+        background: #f5f5f5;
         padding: 20px 30px;
-        color: ${({theme}) => theme.bgcolor};
+        color: currentColor;
         font-weight: 500;
         white-space: break-spaces;
         border-radius: 5px;
+        border: 1px solid #d3dce6;
     }
 
     & code {
@@ -100,6 +101,7 @@ export const Body = styled.div`
     }
 
     & a {
+        color: #0556f3;
     }
 
     & a:hover {
