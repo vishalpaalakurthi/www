@@ -32,11 +32,10 @@ export const NavLinks = styled.div`
 export const LinkWrapper = styled.div`
     padding: 5px;
     margin: 0px 10px;
-    font-weight: 600;
     transition: 0.3s ease-in;
+    font-size: 23px;
 
     &:hover {
-        font-weight: 700;
         opacity: 0.8;
         letter-spacing: 1px;
         transition: 0.3s ease-in-out;
