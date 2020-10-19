@@ -19,10 +19,10 @@ export const ContactBody = styled.div`
 `;
 
 export const PrimaryTitle = styled.h2`
-    font-weight: 600;
+    font-weight: 400;
     color: ${({ theme }) => theme.primarycolor};
     letter-spacing: 1px;
-    font-size: 30px;
+    font-size: 40px;
 `;
 
 export const Title = styled.h3`
