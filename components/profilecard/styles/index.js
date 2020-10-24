@@ -7,8 +7,27 @@ export const Container = styled.div`
 
 export const Inner = styled.div`
     display: flex;
+    margin: 40px 0px;
+    width: 100%;
+    align-items: center;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+`;
+
+export const Block = styled.div`
+    display: flex;
+    margin: 0px 10px;
     flex-direction: column;
-    margin: 40px;
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+`;
+
+export const Text = styled.h5`  
+    margin: 25px 0px;
+    font-style: normal;
 `;
 
 export const Title = styled.h1`

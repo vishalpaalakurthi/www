@@ -1,6 +1,5 @@
 import NavBar from './elements';
 import Logo from '../Logo';
-import Pallette from '../pallette';
 
 const NavBarContainer = () => {
     return (

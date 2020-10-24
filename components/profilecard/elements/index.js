@@ -1,4 +1,4 @@
-import { Container, Inner, Title, SubTitle, Social, Break } from '../styles';
+import { Container, Inner, Title, SubTitle, Social, Break, Block, Text } from '../styles';
 
 export default function ProfileCard ({children, ...restProps}) {
     return (
@@ -8,6 +8,22 @@ export default function ProfileCard ({children, ...restProps}) {
             </Inner>
         </Container>
 
+    )
+}
+
+ProfileCard.Block = function ProfileCardBlock({children, ...restProps}) {
+    return (
+        <Block {...restProps}>
+            {children}
+        </Block>
+    )
+}
+
+ProfileCard.Text = function ProfileCardText({children, ...restProps}) {
+    return (
+        <Text {...restProps}>
+            {children}
+        </Text>
     )
 }
 

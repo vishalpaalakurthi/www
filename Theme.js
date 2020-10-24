@@ -6,9 +6,10 @@ import NavBar from './components/navbar';
 
 export const theme = {
     light: {
-        bgcolor: '#EEF0F1',
+        bgcolor: '#FFFFFF',
         textcolor: '#100e17',
         primarycolor: '#100e17',
+        secondarycolor: "#3A48C6",
         blogBg: '#FFFFFF',
         highlitecolor: '#ff6363'
     },
@@ -60,10 +61,8 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.textcolor};
     display: grid;
     overflow-x: hidden;
-    font-family: Poppins;
     font-style: normal;
     margin: 0;
-    padding: 5px 15px;
     transition: all 0.25s linear;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   }
