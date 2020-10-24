@@ -4,11 +4,11 @@ import Icon from 'react-icons-kit';
 import { arrowRight } from 'react-icons-kit/feather';
 import { Articles as ArticlesData } from "../../assets/metadata/Metadata";
 
-export default ({limit}) => {
+export default ({limit, title}) => {
     let data_articles = ArticlesData.length === 0 ? [] : limit ? ArticlesData.slice(0,limit) : ArticlesData;
     return (
         <Articles>
-            <Articles.PrimaryTitle>Articles</Articles.PrimaryTitle>
+            <Articles.PrimaryTitle>{title}</Articles.PrimaryTitle>
             <Articles.ArticlesBody>
                 {data_articles.length === 0 
                     ? <Articles.Message> I am currently exploring on awesome topics </Articles.Message>

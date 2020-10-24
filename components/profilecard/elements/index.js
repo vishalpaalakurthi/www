@@ -1,17 +1,33 @@
-import { Container, Inner, Title, SubTitle, Social, Break, Block, Text } from '../styles';
+import { Container, Inner, Inner2, Title, SubTitle, Social, Break, Block, Text, Button } from '../styles';
 
-export default function ProfileCard ({children, ...restProps}) {
+export default function ProfileCard({ children, ...restProps }) {
     return (
         <Container {...restProps}>
-            <Inner>
-                {children}
-            </Inner>
+            {children}
         </Container>
 
     )
 }
 
-ProfileCard.Block = function ProfileCardBlock({children, ...restProps}) {
+ProfileCard.Inner = function ProfileCardInner({ children, ...restProps }) {
+    return (
+        <Inner {...restProps}>
+            {children}
+        </Inner>
+    )
+}
+
+
+
+ProfileCard.Inner2 = function ProfileCardInner2({ children, ...restProps }) {
+    return (
+        <Inner2 {...restProps}>
+            {children}
+        </Inner2>
+    )
+}
+
+ProfileCard.Block = function ProfileCardBlock({ children, ...restProps }) {
     return (
         <Block {...restProps}>
             {children}
@@ -19,7 +35,7 @@ ProfileCard.Block = function ProfileCardBlock({children, ...restProps}) {
     )
 }
 
-ProfileCard.Text = function ProfileCardText({children, ...restProps}) {
+ProfileCard.Text = function ProfileCardText({ children, ...restProps }) {
     return (
         <Text {...restProps}>
             {children}
@@ -27,7 +43,7 @@ ProfileCard.Text = function ProfileCardText({children, ...restProps}) {
     )
 }
 
-ProfileCard.Title = function ProfileCardTitle({children, ...restProps}) {
+ProfileCard.Title = function ProfileCardTitle({ children, ...restProps }) {
     return (
         <Title {...restProps}>
             {children}
@@ -35,7 +51,7 @@ ProfileCard.Title = function ProfileCardTitle({children, ...restProps}) {
     )
 }
 
-ProfileCard.SubTitle = function ProfileCardSubTitle({children, ...restProps}) {
+ProfileCard.SubTitle = function ProfileCardSubTitle({ children, ...restProps }) {
     return (
         <SubTitle {...restProps}>
             {children}
@@ -43,7 +59,7 @@ ProfileCard.SubTitle = function ProfileCardSubTitle({children, ...restProps}) {
     )
 }
 
-ProfileCard.Social = function ProfileCardSocial({children, ...restProps}) {
+ProfileCard.Social = function ProfileCardSocial({ children, ...restProps }) {
     return (
         <Social {...restProps}>
             {children}
@@ -51,10 +67,18 @@ ProfileCard.Social = function ProfileCardSocial({children, ...restProps}) {
     )
 }
 
-ProfileCard.Break = function ProfileCardBreak({children, ...restProps}) {
+ProfileCard.Break = function ProfileCardBreak({ children, ...restProps }) {
     return (
         <Break {...restProps}>
             {children}
         </Break>
+    )
+}
+
+ProfileCard.Button = function ProfileCardButton({children, ...restProps}) {
+    return (
+        <Button {...restProps}>
+            {children}
+        </Button>
     )
 }

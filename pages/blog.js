@@ -5,7 +5,7 @@ import Articles from "../components/articles";
 export default () => {
     return (
         <> 
-            <Articles />
+            <Articles title="Articles" />
         </>
     )
 }

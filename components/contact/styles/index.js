@@ -16,26 +16,27 @@ export const Inner = styled.div`
 export const ContactBody = styled.div`
     display: flex;
     flex-direction: column;
+    background: ${({ theme }) => theme.secondarycolor};
+    border-radius: 5px;
+    color: ${({ theme }) => theme.bgcolor};
+    padding: 10px 0px;
 `;
 
 export const PrimaryTitle = styled.h2`
     font-weight: 400;
-    color: ${({ theme }) => theme.primarycolor};
-    letter-spacing: 1px;
-    font-size: 40px;
+    letter-spacing: 0.02em;
+    font-size: 50px;
 `;
 
 export const Title = styled.h3`
     margin: 2px;
     font-weight: 400;
-    color: ${({ theme }) => theme.primarycolor};
     font-size: 18px;
 `;
 
 export const SubTitle = styled.h5`
     margin: 2px;
     font-weight: normal;
-    color: ${({ theme }) => theme.primarycolor};
     font-size: 15px;
 `;
 
@@ -47,8 +48,8 @@ export const Description = styled.p`
 
 export const Navigation = styled.div`
     transition: 0.3s ease-in;
-    font-size: 15px;
-    margin: 0px 20px;
+    font-size: 25px;
+    margin: 10px 40px;
     padding: 0px 10px;
     font-weight: 400;
     &:hover {
@@ -65,6 +66,7 @@ export const Message = styled.div`
     display: flex;
     margin: 20px;
     padding: 10px 10px;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 400;
+    line-height: 45px;
 `;

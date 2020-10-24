@@ -7,27 +7,45 @@ export const Container = styled.div`
 
 export const Inner = styled.div`
     display: flex;
-    margin: 40px 0px;
+    margin: 50px;
+    width: 100%;
+    align-items: center;
+
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+        width: 600px;
+    }
+`;
+
+export const Inner2 = styled.div`
+    display: flex;
+    margin: 50px;
     width: 100%;
     align-items: center;
 
     @media (max-width: 600px) {
         flex-direction: column;
+        width: 600px;
     }
 `;
 
 export const Block = styled.div`
     display: flex;
-    margin: 0px 10px;
+    margin: 0px 30px;
     flex-direction: column;
     width: 100%;    
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+
+    @media (max-width: 600px) {
+        align-items: center;
+    }
 `;
 
 export const Text = styled.h5`  
     margin: 25px 0px;
     font-style: normal;
+    display: flex;
 `;
 
 export const Title = styled.h1`
@@ -46,3 +64,19 @@ export const SubTitle = styled.h5`
 export const Social = styled.div``;
 
 export const Break = styled.div``;
+
+export const Button = styled.button`
+    background: ${({ theme }) => theme.secondarycolor};
+    color: ${({ theme }) => theme.bgcolor};
+    height: 65px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+`;

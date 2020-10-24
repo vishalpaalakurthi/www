@@ -100,8 +100,8 @@ export const ThemeWrapper = ({ children }) => {
                         <MDXProvider>
                             {children}
                         </MDXProvider>
-                        <footer>
-                            <Social />
+                        <footer style={{display: 'flex', justifyContent: 'flex-end', margin: '10px 0px'}}>
+                            <Social size={40} />
                         </footer>
                     </Wrapper>
                 </ThemeProvider>
