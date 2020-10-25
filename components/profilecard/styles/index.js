@@ -13,7 +13,6 @@ export const Inner = styled.div`
 
     @media (max-width: 600px) {
         flex-direction: column-reverse;
-        width: 600px;
     }
 `;
 
@@ -25,7 +24,6 @@ export const Inner2 = styled.div`
 
     @media (max-width: 600px) {
         flex-direction: column;
-        width: 600px;
     }
 `;
 
