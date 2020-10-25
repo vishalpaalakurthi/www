@@ -8,8 +8,9 @@ export default function BLogPostContainer ({children, meta}) {
                     {meta.title}
                 </BlogPost.Title>
                 <BlogPost.SubHeader>
+                    <BlogPost.TextItem>{meta.readTime}{' mins read'}</BlogPost.TextItem>
+                    <BlogPost.TextItem>{meta.author}</BlogPost.TextItem>
                     <BlogPost.TextItem>{meta.date}</BlogPost.TextItem>
-                    <BlogPost.TextItem>{'Read time - '}{meta.readTime}{' mins'}</BlogPost.TextItem>
                 </BlogPost.SubHeader>
             </BlogPost.Header>
             <BlogPost.Body>
