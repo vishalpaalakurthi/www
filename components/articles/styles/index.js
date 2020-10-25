@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
+    margin-top: 30px;
 `;
 
 export const Inner = styled.div`
@@ -74,7 +75,7 @@ export const Description = styled.p`
 export const Navigation = styled.div`
     transition: 0.3s ease-in;
     font-size: 25px;
-    line-height: 40px;
+    line-height: 50px;
     color: ${({ theme }) => theme.bgcolor};
     &:hover {
         letter-spacing: 1px;

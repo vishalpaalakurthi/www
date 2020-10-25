@@ -10,17 +10,17 @@ export default () => {
                     <ProfileCard.Text style={{ fontSize: '45px', fontWeight: '500' }}>
                         Hey _____________________
                 </ProfileCard.Text>
-                    <ProfileCard.Text style={{ fontSize: '70px', fontWeight: 'bold' }}>
+                    <ProfileCard.Text style={{ fontSize: '70px', fontWeight: 'bold', letterSpacing:'5px' }}>
                         I AM VISHAL
                 </ProfileCard.Text>
-                    <ProfileCard.Text style={{ fontSize: '23px', fontWeight: '500' }}>
-                        Developer | Freelancer | Product Development
+                    <ProfileCard.Text style={{ fontSize: '21px', fontWeight: '500' }}>
+                        Programmer | Product Development | Freelancer
                 </ProfileCard.Text>
                     <ProfileCard.Social>
                         <Social size={45} />
                     </ProfileCard.Social>
                 </ProfileCard.Block>
-                <ProfileCard.Block>
+                <ProfileCard.Block style={{height: '800px'}}>
                     <HelloHuman />
                 </ProfileCard.Block>
             </ProfileCard.Inner>
@@ -32,7 +32,7 @@ export const SubProfileCard = () => {
     return (
         <ProfileCard>
             <ProfileCard.Inner2 >
-                <ProfileCard.Block>
+                <ProfileCard.Block style={{height: '800px'}}>
                     <HeyHuman />
                 </ProfileCard.Block>
                 <ProfileCard.Block>
