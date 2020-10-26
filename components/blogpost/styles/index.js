@@ -62,10 +62,10 @@ export const Article = styled.article`
      line-height: 2em;
      font-style: normal;
      font-weight: normal;
-     font-size: 32px;
+     font-size: 35px;
 
     @media(max-width: 600px) {
-        font-size: 25px;
+        font-size: 30px;
     }
 `;
 
