@@ -2,19 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    margin: 40px;
 
     @media (max-width: 600px) {
-        margin: 25px;
     }
 `;
 
 export const Inner = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;
-    justify-content: space-around;
-    border-radius: 5px;
+    margin: 20px;
 `;
 
 export const Title = styled.h2`
@@ -24,15 +20,14 @@ export const Title = styled.h2`
 `;
 
 export const TextItem = styled.p`
-    margin: 5px 20px;
-    font-weight: 500;
+    margin-right: 25px;
+    font-weight: 300;
     font-size: 16px;
 `;
 
 export const Header = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 30px 0px;
     background: ${({theme}) => theme.secondarycolor};
     color: ${({theme}) => theme.bgcolor};
     border-radius: 5px;
@@ -41,20 +36,17 @@ export const Header = styled.div`
     ${Title} {
         font-style: normal;
         font-weight: 500;
-        font-size: 50px;
-        line-height: 75px;
-        letter-spacing: 0.02em;
+        font-size: 35px;
+        line-height: 50px;
     }
 `;
 
 export const SubHeader = styled.div`
     display: flex;
+
     ${TextItem} {
         font-style: normal;
-        font-weight: 500;
         font-size: 25px;
-        line-height: 37px;
-        letter-spacing: 0.02em;
     }
 `;
 
@@ -62,7 +54,7 @@ export const Article = styled.article`
      line-height: 2em;
      font-style: normal;
      font-weight: normal;
-     font-size: 35px;
+     font-size: 25px;
 
     @media(max-width: 600px) {
         font-size: 30px;
