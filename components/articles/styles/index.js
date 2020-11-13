@@ -53,7 +53,7 @@ export const PrimaryTitle = styled.h2`
 export const Title = styled.h3`
     font-weight: 500;
     color: ${({ theme }) => theme.bgcolor};
-    font-size: 30px;
+    font-size: 28px;
     line-height: 45px;
     margin-bottom: 5px;
 `;
@@ -61,7 +61,7 @@ export const Title = styled.h3`
 export const SubTitle = styled.h5`
     font-weight: normal;
     color: ${({ theme }) => theme.bgcolor};
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
     line-height: 35px;
     margin-bottom: 10px;
@@ -74,11 +74,12 @@ export const Description = styled.p`
 
 export const Navigation = styled.div`
     transition: 0.3s ease-in;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 50px;
-    color: ${({ theme }) => theme.bgcolor};
+    color: yellow;
+    letter-spacing: 2px;
     &:hover {
-        letter-spacing: 1px;
+        letter-spacing: 3px;
         transition: 0.3s ease-in-out;
     }
 `;

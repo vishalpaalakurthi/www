@@ -15,7 +15,7 @@ export default ({ to, label }) => {
         <NavLink
             href={to}>
             <a style={{ display: 'flex', padding: '5px', fontStyle: 'normal', 
-                        fontWeight: isSelected ? '500' : '400', fontSize: '35px', 
+                        fontWeight: isSelected ? '500' : '400', 
                         lineHeight: '52px', color: isSelected ? "#3A48C6" : "currentcolor" }}>
                 <span>{label.toUpperCase()}</span>
             </a>

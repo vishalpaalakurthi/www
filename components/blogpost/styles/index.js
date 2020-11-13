@@ -36,8 +36,17 @@ export const Header = styled.div`
     ${Title} {
         font-style: normal;
         font-weight: 500;
-        font-size: 35px;
-        line-height: 50px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    @media(max-width: 600px) {
+        ${Title} {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 `;
 
@@ -46,7 +55,7 @@ export const SubHeader = styled.div`
 
     ${TextItem} {
         font-style: normal;
-        font-size: 25px;
+        font-size: 20px;
     }
 `;
 
@@ -54,10 +63,10 @@ export const Article = styled.article`
      line-height: 2em;
      font-style: normal;
      font-weight: normal;
-     font-size: 25px;
+     font-size: 20px;
 
     @media(max-width: 600px) {
-        font-size: 30px;
+        font-size: 23px;
     }
 `;
 

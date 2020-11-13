@@ -48,6 +48,7 @@ export const PrimaryTitle = styled.h2`
     color: ${({ theme }) => theme.primarycolor};
     letter-spacing: 0.02em;
     font-size: 50px;
+    line-height: 50px;
 `;
 
 export const Title = styled.h3`

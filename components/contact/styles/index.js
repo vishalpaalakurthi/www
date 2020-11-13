@@ -27,6 +27,7 @@ export const PrimaryTitle = styled.h2`
     font-weight: 400;
     letter-spacing: 0.02em;
     font-size: 50px;
+    line-height: 50px;
 `;
 
 export const Title = styled.h3`

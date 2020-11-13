@@ -34,7 +34,11 @@ export const LinkWrapper = styled.div`
     padding: 5px;
     margin: 0px 10px;
     transition: 0.3s ease-in;
-    font-size: 23px;
+    font-size: 28px;
+
+    @media(max-width: 1000px) {
+        font-size: 25px;
+    }
 
     &:hover {
         opacity: 0.8;
